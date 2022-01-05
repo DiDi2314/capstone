@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+:root {
+  --d: 700ms;
+  --e: cubic-bezier(0.19, 1, 0.22, 1);
+  --font-sans: "Rubik", sans-serif;
+  --font-serif: "Cardo", serif;
+}
+@font-face{
+  font-family: 'gimyui';
+  src: url('./gimyui.ttf') format('truetype');
+}
+/* * {
+  box-sizing: border-box;
+} */
+
+h1 div div div h2{
+  color: #ffffff;
+  font-family: "gimyui", cursive;
+}
+
+h1 div p{
+  font-family: "gimyui";
+  font-size :25px;
+}
+a{
+  color : #5A8246;
+}
+
+.page-content {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  max-width: 1024px;
+  height: auto;   
+  /* margin: auto; */
+  font-family: var(--font-sans);
+
+  margin-left: 23%;
+  
+}
+
+ul.gradient_list{
+  font-family: "gimyui";
+  font-size :30px;
+}
+
+@media (min-width: 600px) {
+  .page-content {
+    width: auto;
+    grid-template-columns: 70% 2fr;
+  }
+}
+
+.gradient_list{
+  font-family: "gimyui";
+  font-size :35px; /*리스트 글자 사이즈*/
+
+}
+
+.title1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+
+}
+

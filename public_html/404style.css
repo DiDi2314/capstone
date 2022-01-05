@@ -1,0 +1,15 @@
+html{
+  background: rgb(35,97,146);
+  background: -moz-linear-gradient(160deg, rgba(35,97,146,1) 15%, rgba(60,16,83,1) 58%);
+ background: -webkit-linear-gradient(160deg, rgba(35,97,146,1) 15%, rgba(60,16,83,1) 58%);
+background: linear-gradient(160deg, rgba(35,97,146,1) 15%, rgba(60,16,83,1) 58%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#236192",endColorstr="#3c1053",GradientType=1);
+background-repeat: no-repeat;
+  background-position: cover;
+}
+svg{
+  overflow: visible;
+  display: block;
+  margin:100px auto;
+  width: 50%;
+}
