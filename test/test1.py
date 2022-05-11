@@ -20,12 +20,16 @@ value_list = [] #데이터값
 
 temp_dict={}
 
-for i in range(1, 2783):
+for i in range(1, 981):
     params ={'serviceKey' : servicekey, 
+            'numOfRows' : '12', 
             'pageNo' : i, 
             'MobileOS' : 'ETC', 
-            'MobileApp' : 'TourAPI3.0_Guide',
-            'numOfRows' : '12',
+            'MobileApp' : 'TourAPI3.0_Guide', 
+            'contentTypeId' : '12',
+            'cat1' : 'A01',
+            'listYN' : 'Y',
+            'arrange' : 'A'
             }
 
     response = requests.get(url, params=params)
@@ -52,11 +56,7 @@ df = pd.DataFrame(data=None, index=None, columns=None, dtype=None, copy=False)
 
 for i in range(0, len(row_list)):
     new_data = row_list[i]
-
-    try:
-        df=df.append(new_data, ignore_index=True)
-    except:
-        pass
+    df=df.append(new_data, ignore_index=True)
  
 #df=df.iloc[:, [0, 1, 2, 3, 4, 5, 6, 7, 15, 17, 18]]
 
